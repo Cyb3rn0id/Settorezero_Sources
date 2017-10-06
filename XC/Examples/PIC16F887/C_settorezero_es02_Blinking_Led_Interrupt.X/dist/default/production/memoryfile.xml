@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <executable name="dist/default/production\C_settorezero_es02_Blinking_Led_Interrupt.X.production.hex">
+    <memory name="program">
+      <units>words</units>
+      <length>8192</length>
+      <used>144</used>
+      <free>8048</free>
+    </memory>
+    <memory name="data">
+      <units>bytes</units>
+      <length>368</length>
+      <used>13</used>
+      <free>355</free>
+    </memory>
+  </executable>
+</project>

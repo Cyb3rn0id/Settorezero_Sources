@@ -1,0 +1,141 @@
+[p LITE_MODE AUTOSTATIC PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F887 ]
+[d frameptr 6 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\pic\eeprom.c
+[v _eecpymem eecpymem `(v  1 e 1 0 ]
+"39
+[v _memcpyee memcpyee `(v  1 e 1 0 ]
+"65 L:\Lezioni_Aggiornate\C_settorezero_es02_Blinking_Led_Interrupt.X\main.c
+[v _main main `(i  1 e 2 0 ]
+"77
+[v _beep beep `(v  1 e 1 0 ]
+"94
+[v _settings settings `(v  1 e 1 0 ]
+"123
+[v _isr isr `II(v  1 e 1 0 ]
+"57 C:\Program Files (x86)\Microchip\xc8\v1.44\include\pic16f887.h
+[v _TMR0 TMR0 `VEuc  1 e 1 @1 ]
+[s S34 . 1 `uc 1 RC0 1 0 :1:0 
+`uc 1 RC1 1 0 :1:1 
+`uc 1 RC2 1 0 :1:2 
+`uc 1 RC3 1 0 :1:3 
+`uc 1 RC4 1 0 :1:4 
+`uc 1 RC5 1 0 :1:5 
+`uc 1 RC6 1 0 :1:6 
+`uc 1 RC7 1 0 :1:7 
+]
+"305
+[u S43 . 1 `S34 1 . 1 0 ]
+[v _PORTCbits PORTCbits `VES43  1 e 1 @7 ]
+[s S167 . 1 `uc 1 RD0 1 0 :1:0 
+`uc 1 RD1 1 0 :1:1 
+`uc 1 RD2 1 0 :1:2 
+`uc 1 RD3 1 0 :1:3 
+`uc 1 RD4 1 0 :1:4 
+`uc 1 RD5 1 0 :1:5 
+`uc 1 RD6 1 0 :1:6 
+`uc 1 RD7 1 0 :1:7 
+]
+"367
+[u S176 . 1 `S167 1 . 1 0 ]
+[v _PORTDbits PORTDbits `VES176  1 e 1 @8 ]
+[s S134 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INTF 1 0 :1:1 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INTE 1 0 :1:4 
+`uc 1 T0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"480
+[s S143 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 TMR0IE 1 0 :1:5 
+]
+[u S148 . 1 `S134 1 . 1 0 `S143 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES148  1 e 1 @11 ]
+[s S57 . 1 `uc 1 ADON 1 0 :1:0 
+`uc 1 GO_nDONE 1 0 :1:1 
+`uc 1 CHS 1 0 :4:2 
+`uc 1 ADCS 1 0 :2:6 
+]
+"1274
+[s S62 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO 1 0 :1:1 
+`uc 1 CHS0 1 0 :1:2 
+`uc 1 CHS1 1 0 :1:3 
+`uc 1 CHS2 1 0 :1:4 
+`uc 1 CHS3 1 0 :1:5 
+`uc 1 ADCS0 1 0 :1:6 
+`uc 1 ADCS1 1 0 :1:7 
+]
+[s S71 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 nDONE 1 0 :1:1 
+]
+[s S74 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO_DONE 1 0 :1:1 
+]
+[u S77 . 1 `S57 1 . 1 0 `S62 1 . 1 0 `S71 1 . 1 0 `S74 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES77  1 e 1 @31 ]
+[s S108 . 1 `uc 1 PS 1 0 :3:0 
+`uc 1 PSA 1 0 :1:3 
+`uc 1 T0SE 1 0 :1:4 
+`uc 1 T0CS 1 0 :1:5 
+`uc 1 INTEDG 1 0 :1:6 
+`uc 1 nRBPU 1 0 :1:7 
+]
+"1364
+[s S115 . 1 `uc 1 PS0 1 0 :1:0 
+`uc 1 PS1 1 0 :1:1 
+`uc 1 PS2 1 0 :1:2 
+]
+[u S119 . 1 `S108 1 . 1 0 `S115 1 . 1 0 ]
+[v _OPTION_REGbits OPTION_REGbits `VES119  1 e 1 @129 ]
+"1414
+[v _TRISA TRISA `VEuc  1 e 1 @133 ]
+"1476
+[v _TRISB TRISB `VEuc  1 e 1 @134 ]
+"1538
+[v _TRISC TRISC `VEuc  1 e 1 @135 ]
+"1600
+[v _TRISD TRISD `VEuc  1 e 1 @136 ]
+"1662
+[v _TRISE TRISE `VEuc  1 e 1 @137 ]
+"3385
+[v _ANSEL ANSEL `VEuc  1 e 1 @392 ]
+"3447
+[v _ANSELH ANSELH `VEuc  1 e 1 @393 ]
+"3780
+[v _GIE GIE `VEb  1 e 0 @95 ]
+"58 L:\Lezioni_Aggiornate\C_settorezero_es02_Blinking_Led_Interrupt.X\main.c
+[v _TimerLed TimerLed `uc  1 e 1 0 ]
+"65
+[v _main main `(i  1 e 2 0 ]
+{
+"75
+} 0
+"94
+[v _settings settings `(v  1 e 1 0 ]
+{
+"120
+} 0
+"77
+[v _beep beep `(v  1 e 1 0 ]
+{
+"84
+[v beep@t t `uc  1 s 1 t ]
+"92
+} 0
+"123
+[v _isr isr `II(v  1 e 1 0 ]
+{
+"136
+} 0
