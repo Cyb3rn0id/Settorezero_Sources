@@ -1,0 +1,10 @@
+Elenco revisioni librerie one-wire
+
+1.0 
+rilasciata il: 22/09/10
+prima release
+
+1.1
+rilasciata il: 20/12/10
+- aggiunta funzione OWSendID(char *ID) per inviare RESET+ MATCH_ROM + ID dispositivo
+- aggiustati ed eliminati alcuni ritardi

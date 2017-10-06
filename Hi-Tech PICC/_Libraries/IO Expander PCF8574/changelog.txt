@@ -1,0 +1,10 @@
+IO EXPANDER ROUTINES
+
+CHANGELOG
+
+Autors and contributors list:			
+
+(BG) Bernardo Giovanni - http://www.settorezero.com
+
+1.0				
+BG: first release, PCF8574 supported

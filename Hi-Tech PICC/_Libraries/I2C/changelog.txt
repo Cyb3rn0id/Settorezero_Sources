@@ -1,0 +1,23 @@
+I2C HARDWARE ROUTINES FOR MICROCHIP PICMICRO WITH MSSP MODULE
+SSP MODULE NOT SUPPORTED
+
+CHANGELOG
+
+Autors and contributors list:			
+
+(BG) Bernardo Giovanni - http://www.settorezero.com
+(NS) Nicola Sellitto - snico_one@yahoo.it
+(MA) Michael Alon - michael@elina-micro.co.il
+(LM) Littleman - little_man@libero.it
+
+Revisions
+
+1.2
+BG: Added new mnemonics #define for use with older MCUs
+
+1.1
+BG: Added I2cReadBulk function
+
+1.0				
+BG: adapted to new mnemonics, minor edits
+NS: minor edits on original work of MA, LM			
