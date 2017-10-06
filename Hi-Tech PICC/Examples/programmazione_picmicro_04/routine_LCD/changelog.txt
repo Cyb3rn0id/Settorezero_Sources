@@ -1,0 +1,24 @@
+Edits by Bernardo Giovanni (www.settorezero.com)
+to "POOR's (universal) LCD interface V1.4b" by Andrea Bonzini
+
+1 - added function LCD_CUSTOMCHAR to customize the character in
+    the CGRAM. 
+
+2 - added new settings for entry mode:
+	LCD_CURSOR_VISIBLE (enable/disable the cursor)
+	LCD_CURSOR_BLINKING (enable/disable the cursor blinking)
+	
+3 - added a small routine for typewrite effect. To enable this,
+    the flag LCD_TYPEWRITE must be set to 1. The delay between
+	characters can be chosed by the option LCD_TW_DELAY (ms).
+	This setting enables a delay routine in the LCD_WRITE
+	function (only if we're not in command mode).
+	
+4 - slightly modified the code that defines the rows address
+    (the lines 1 and 2 have the same address for all lcd
+	types, and then I've putted them out of the #if statement).
+	
+5 - slightly modified the initialization function. The delays
+    are now incremented (the old values could not be efficient
+	on some lcds). Added the clear display after diplay off as
+	specified on some datasheets.	

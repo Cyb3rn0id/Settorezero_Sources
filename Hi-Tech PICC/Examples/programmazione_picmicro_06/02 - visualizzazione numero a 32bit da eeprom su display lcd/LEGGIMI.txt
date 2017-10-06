@@ -1,0 +1,1 @@
+per visualizzare questo esempio, ovviamente non sono necessari i pulsanti, i led ed il buzzer
