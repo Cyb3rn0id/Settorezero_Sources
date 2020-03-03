@@ -35,15 +35,29 @@ void main(void)
         convs++;
             
         if (convs==32)
-        {
-        convs=0;
-        res>>=5; // division by 32
-        printf("ADC Reading: %d\n",res);
-        printf("Voltage    : %dmV\n\n",res*2);
-        uint8_t i=4;
-        while(i--) __delay_ms(500);
-        res=0;
-        }
+            {
+            convs=0;
+            res>>=5; // division by 32
+            printf("ADC Reading: %d\n",res);
+            // voltage on AN pin is about res*2
+            // battery voltage is Vout/0.44
+            // so float Vbat=(res*2)/0.44;
+            // battery is good from:
+            // res=703 => battery 0%
+            // to
+            // res=923 => battery 100%
+            // so, percentage is:
+            // ((res-703)/(923-703))*100
+            // =>((res-703)*100)/220
+            uint16_t percent=((res-703)*100)/220; // only integer part
+            if (percent>100) percent=100;
+            printf("Battery percent: %d\n\n",percent);
+            
+            // 2 seconds delay
+            uint8_t i=4;
+            while(i--) __delay_ms(500);
+            res=0;
+            }
         
         // Not needed since in the example I'm using only AN3 and is selected
         // by default, but if you enable more than one input as analog, you

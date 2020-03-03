@@ -227,7 +227,7 @@
         <property key="programoptions.testmodeentrymethod" value="VDDFirst"/>
         <property key="ptgProgramImage" value="true"/>
         <property key="ptgSendImage" value="true"/>
-        <property key="voltagevalue" value="5.0"/>
+        <property key="voltagevalue" value="3.3"/>
       </pk4hybrid>
     </conf>
   </confs>
